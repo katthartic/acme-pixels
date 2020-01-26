@@ -34,8 +34,9 @@ const colorControls = document.querySelector('#palette')
 
 const renderPalatte = () => {
     let html = colorPalatte.map((color) => {
-        return `<div style='backgroud-color:${color}'></div>`
+        return `<div style="background-color:${color}"></div>`
     }).join('')
+
     colorControls.innerHTML = html
 }
 
