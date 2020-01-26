@@ -45,9 +45,18 @@ renderPalatte()
 const xInput = document.querySelector('#x')
 const yInput = document.querySelector('#y')
 const button = document.querySelector('button')
+const grid = document.querySelector('table')
+
 
 button.addEventListener('click', (ev) => {
     ev.preventDefault()
-    // console.log(ev.target)
+    let html = []
+    for (let i = 0; i < yInput; i++) {
+        html.push('<tr></tr>')
+    }
+
+    console.log(html)
+    grid.innerHTML = html.join('')
+    console.log(grid.innerHTML)
 })
 
