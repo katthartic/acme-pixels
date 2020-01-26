@@ -1,22 +1,31 @@
 
-div {
-    /* width: 100%; */
+#grid {
+    display: flex;
 }
 
-table {
-    /* border: solid 1px black; */
-    width: 100%;
+#grid div {
+    display: flexbox;
+    border: black solid 1px;
+    align-items: center;
+    height: 1rem;
 }
 
-tr {
+.cols {
+    width: 1rem;
+}
+/* tr {
     border: solid 1px black;
     margin: 0;
-}
+    width: 1rem;
+    height: 1rem;
+} */
 
-td {
+/* td {
     border: solid 1px black;
     margin: 0;
-}
+    width: 1rem;
+    height: 1rem;
+} */
 
 #palette {
     display: flex;

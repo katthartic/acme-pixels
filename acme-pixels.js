@@ -45,7 +45,7 @@ renderPalatte()
 const xInput = document.querySelector('#x')
 const yInput = document.querySelector('#y')
 const button = document.querySelector('button')
-const grid = document.querySelector('table')
+const grid = document.querySelector('#grid')
 
 
 
@@ -53,7 +53,8 @@ const grid = document.querySelector('table')
 button.addEventListener('click', (ev) => {
     ev.preventDefault()
 
-    let html = new Array(Number(yInput.value)).fill('<tr></tr>').join('')
+    let columns = new Array(Number(xInput.value)).fill('<div class="cols"></div>').join('')
+    let html = new Array(Number(yInput.value)).fill(`<div>${columns}</div>`).join('')
     console.log(html)
 
     grid.innerHTML = html
