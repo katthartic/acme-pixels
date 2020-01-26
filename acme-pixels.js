@@ -50,7 +50,7 @@ const grid = document.querySelector('table')
 
 
 
-document.querySelector('form').addEventListener('submit', (ev) => {
+button.addEventListener('click', (ev) => {
     ev.preventDefault()
 
     let html = new Array(Number(yInput.value)).fill('<tr></tr>').join('')
