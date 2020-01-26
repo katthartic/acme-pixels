@@ -28,3 +28,12 @@ const colorIterater = () => {
 const colorPalatte = colorIterater()
 
 console.log(colorPalatte)
+
+const colorControls = document.querySelector('#palette')
+
+const render = () => {
+    let html = colorPalatte.map((item) => {
+        return `
+        `
+    })
+}
