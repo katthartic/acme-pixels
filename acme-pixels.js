@@ -9,8 +9,9 @@ const hex = [
 
 const colorIterater = () => {
     const colorList = []
+    let colorTag = '#'
         for (let i = 0; i < hex.length; i++) {
-            let iColor = hex[i]
+            let iColor = colorTag + hex[i]
 
             for (let j = 0; j < hex.length; j++) {
                 let jColor = iColor + hex[j]
@@ -27,13 +28,15 @@ const colorIterater = () => {
 
 const colorPalatte = colorIterater()
 
-console.log(colorPalatte)
+//console.log(colorPalatte)
 
 const colorControls = document.querySelector('#palette')
 
-const render = () => {
-    let html = colorPalatte.map((item) => {
-        return `
-        `
-    })
+const renderPalatte = () => {
+    let html = colorPalatte.map((color) => {
+        return `<div style='backgroud-color:${color}'></div>`
+    }).join('')
+    colorControls.innerHTML = html
 }
+
+renderPalatte()
