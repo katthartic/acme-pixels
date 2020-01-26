@@ -1,19 +1,26 @@
 
-
 div {
     border: solid 1px black;
     margin: 1rem 0rem;
+    width: 100%;
 }
 
-body {
+#palette {
+
+}
+
+section {
     display: flex;
     flex-direction: row;
+    margin: 2% 3%;
+    border: solid 1px black;
 }
 
 .left-column {
     display: flex;
     flex-direction: column;
     border: solid 1px black;
+    text-align: center;
     
 }
 
@@ -21,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     border: solid 1px black;
+    text-align: center;
 }
 
 form {
