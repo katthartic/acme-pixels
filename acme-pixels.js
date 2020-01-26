@@ -56,7 +56,7 @@ button.addEventListener('click', (ev) => {
     let html = new Array(Number(yInput.value)).fill('<tr></tr>').join('')
     console.log(html)
 
-    grid.innerHTML = `<tbody>${html}</tbody>`
+    grid.innerHTML = html
 
     console.log(grid.innerHTML)
 })
