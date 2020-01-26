@@ -48,15 +48,16 @@ const button = document.querySelector('button')
 const grid = document.querySelector('table')
 
 
-button.addEventListener('click', (ev) => {
-    ev.preventDefault()
-    let html = []
-    for (let i = 0; i < yInput; i++) {
-        html.push('<tr></tr>')
-    }
 
+
+document.querySelector('form').addEventListener('submit', (ev) => {
+    ev.preventDefault()
+
+    let html = new Array(Number(yInput.value)).fill('<tr></tr>').join('')
     console.log(html)
-    grid.innerHTML = html.join('')
+
+    grid.innerHTML = `<tbody>${html}</tbody>`
+
     console.log(grid.innerHTML)
 })
 
