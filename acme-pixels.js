@@ -41,3 +41,13 @@ const renderPalatte = () => {
 }
 
 renderPalatte()
+
+const xInput = document.querySelector('#x')
+const yInput = document.querySelector('#y')
+const button = document.querySelector('button')
+
+button.addEventListener('click', (ev) => {
+    ev.preventDefault()
+    // console.log(ev.target)
+})
+
